@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { useNavigate, Outlet } from "react-router";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -10,6 +10,7 @@ const Contact = () => {
     <>
       <div className="component">Contact</div>
       <button onClick={handleSubmit}>Submit Form</button>
+      <Outlet />
     </>
   );
 };
