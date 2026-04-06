@@ -1,9 +1,14 @@
-import React from 'react'
+import { useLocation, useSearchParams } from "react-router";
 
 const ProductList = () => {
-  return (
-    <div>ProductList</div>
-  )
-}
+  const [searchParams] = useSearchParams();
+  const location = useLocation();
+  console.log(searchParams.get("keyword"));
+  console.log(searchParams.get("instock"));
+  console.log(searchParams.get("rating"));
+  console.log(location);
 
-export default ProductList
+  return <div className="component">ProductList</div>;
+};
+
+export default ProductList;
