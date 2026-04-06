@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Admin from "./components/Admin";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   const user: boolean = true;
@@ -24,6 +25,7 @@ function App() {
             path="admin"
             element={user ? <Admin /> : <Navigate to="/" />}
           />
+          <Route path="*" element={<PageNotFound title="404"/>} />
         </Routes>
       </main>
 
