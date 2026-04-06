@@ -1,7 +1,10 @@
-import React from "react";
-
+import { Link } from "react-router";
 const Footer = () => {
-  return <footer>Footer</footer>;
+  return (
+    <footer>
+      <Link to="/">2030 Routemate</Link>
+    </footer>
+  );
 };
 
 export default Footer;
