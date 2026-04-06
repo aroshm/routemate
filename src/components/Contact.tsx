@@ -1,9 +1,17 @@
-import React from 'react'
+import { useNavigate } from "react-router";
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate("/");
+  };
 
-export default Contact
+  return (
+    <>
+      <div className="component">Contact</div>
+      <button onClick={handleSubmit}>Submit Form</button>
+    </>
+  );
+};
+
+export default Contact;
