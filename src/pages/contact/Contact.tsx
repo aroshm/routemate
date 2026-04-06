@@ -7,11 +7,11 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <main>
       <div className="component">Contact</div>
       <button onClick={handleSubmit}>Submit Form</button>
       <Outlet />
-    </>
+    </main>
   );
 };
 

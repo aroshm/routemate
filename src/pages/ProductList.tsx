@@ -8,7 +8,11 @@ const ProductList = () => {
   console.log(searchParams.get("rating"));
   console.log(location);
 
-  return <div className="component">ProductList</div>;
+  return (
+    <main>
+      <div className="component">ProductList</div>
+    </main>
+  );
 };
 
 export default ProductList;

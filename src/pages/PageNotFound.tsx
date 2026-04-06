@@ -2,7 +2,11 @@ type PageNotFoundProps = {
   title: string;
 };
 const PageNotFound = ({ title }: PageNotFoundProps) => {
-  return <div className="component">{title} OOps!</div>;
+  return (
+    <main>
+      <div className="component">{title} OOps!</div>
+    </main>
+  );
 };
 
 export default PageNotFound;

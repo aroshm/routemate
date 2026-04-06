@@ -4,7 +4,11 @@ const ProductDetails = () => {
   const params = useParams();
   console.log(params.id);
 
-  return <div className="component">Product: {params.id}</div>;
+  return (
+    <main>
+      <div className="component">Product: {params.id}</div>
+    </main>
+  );
 };
 
 export default ProductDetails;
